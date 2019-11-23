@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Blockstack pure js examples</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>Gaia</h1>
+
+  <h4>
+    You are still signed in :)
+  </h4>
+
+  <button type="button" onclick="signOut()">
+    Sign out
+  </button>
+
+  <p>
+    Gaia is a decentralized file storage. Every blockstack user has 10GB on Gaia storage. <br />
+    Users can encrypt files before saving to Gaia to keep their data secure. <br />
+    They also can save unencrypted data so it's publicly available by special link.
+  </p>
+
+
+  <div class="gaia-example-container">
+    <details>
+      <summary>
+        You can save data to a file (click to expand)
+      </summary>
+
+      <!-- We return false onsubmit to prevent page reload -->
+      <form onsubmit="saveFileToGaia(); return false">
+        <textarea rows="4" cols="50" id="content">File content is here</textarea>
+        <br />
+        filename: <input
+          type="text"
+          id="filename"
+          name="filename"
+          placeholder="Type filename here"
+          value="example.txt"
+        />
+        <br />
+        access: <select id="access">
+          <option selected>Public</option>
+          <option>Private</option>
+        </select>
+        <br />
+        <input type="submit" value="Save file" />
+      </form>
+    </details>
+
+    <details>
+      <summary>
+        You can lists user's files
+      </summary>
+      <button onclick="listGaiaFiles()">
+        List files
+      </button>
+
+      <pre id="files-list"></pre>
+    </details>
+
+    <details>
+      <summary>
+        You can get URL for each file
+      </summary>
+
+      <button onclick="listGaiaFilesWithURLs()">
+        Get URLs
+      </button>
+
+      <pre id="files-list-with-urls"></pre>
+    </details>
+
+    <details>
+      <summary>
+        You can get content of each file
+      </summary>
+
+      <!-- We return false onsubmit to prevent page reload -->
+      <form onsubmit="getFileFromGaia(); return false">
+        filename: <input
+          type="text"
+          id="filename-to-get"
+          name="filename-to-get"
+          placeholder="Type filename here"
+          value="example.txt"
+        />
+        <br />
+        Decrypt: <select id="decrypt">
+          <option selected>No</option>
+          <option>Yes</option>
+        </select>
+        <br />
+        <input type="submit" value="Get file content" />
+      </form>
+
+      <pre id="file-content"></pre>
+    </details>
+
+  </div>
+
+
+  <h4>Summary</h4>
+
+  <p>
+    Gaia is just a decetralized key-value storage system and it has some limitations. <br/>
+    If you want to build a complex app you should consider using <a href="radix.html">Radix</a>. <br/>
+    Radix aims to solve the following problems:
+  </p>
+  <ul>
+    <li>Storing and querying complex data</li>
+    <li>Indexing data to easily query user's publicly saved data</li>
+    <li>Collaboration with other users</li>
+    <li>Real-time updates (in progress)</li>
+  </ul>
+
+  <a href="radix.html">More about radix</a>
+
+  <script src="https://unpkg.com/blockstack@19.4.0-beta.1/dist/blockstack.js" integrity="sha384-UnkhaTA3XqTl/a79lTWO+C85bbXyM8IIUYtSLfrkkNQJcCxocVZv8nHaMzrvS9ZH" crossorigin="anonymous"></script>
+  <script src="js/blockstack-setup.js"></script>
+  <script src="js/gaia.js"></script>
+</body>
+</html>
