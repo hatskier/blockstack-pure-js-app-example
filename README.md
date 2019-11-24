@@ -6,7 +6,7 @@ It is open source and free to use.
 The main purpose is to give simple code exmaples for developers so they can start to build apps on Blockstack easier and faster.
 
 ## Try it
-The app is available at https://purejs.dece.app
+The app is available at http://purejs.dece.app
 
 ## Check out
 - [Oficial blockstack documentation](http://blockstack.github.io/blockstack.js/index.html)
