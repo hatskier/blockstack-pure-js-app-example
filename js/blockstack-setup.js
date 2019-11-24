@@ -9,3 +9,8 @@ var appConfig = new blockstack.AppConfig(
 var userSession = new blockstack.UserSession({
   appConfig,
 });
+
+function signOut() {
+  // We pass url to redirect after signing out
+  blockstack.signUserOut('index.html');
+}

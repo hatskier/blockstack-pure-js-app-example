@@ -18,7 +18,7 @@
   </button>
 
   <p>
-    Gaia is a decentralized file storage. Every blockstack user has 10GB on Gaia storage. <br />
+    Gaia is a decentralized file storage. Each blockstack user has 10GB on Gaia storage. <br />
     Users can encrypt files before saving to Gaia to keep their data secure. <br />
     They also can save unencrypted data so it's publicly available by special link.
   </p>
@@ -29,7 +29,7 @@
       <summary>
         You can save data to a file (click to expand)
       </summary>
-
+      
       <!-- We return false onsubmit to prevent page reload -->
       <form onsubmit="saveFileToGaia(); return false">
         <textarea rows="4" cols="50" id="content">File content is here</textarea>
@@ -51,16 +51,25 @@
       </form>
     </details>
 
+    <a target="_blank" href="https://github.com/hatskier/blockstack-pure-js-app-example/blob/master/js/gaia.js#L3">
+      <img class="gh-img" src="img/gh-icon.png" />
+    </a>
+
     <details>
       <summary>
         You can lists user's files
       </summary>
+
       <button onclick="listGaiaFiles()">
         List files
       </button>
 
       <pre id="files-list"></pre>
     </details>
+
+    <a target="_blank" href="https://github.com/hatskier/blockstack-pure-js-app-example/blob/master/js/gaia.js#L17">
+      <img class="gh-img" src="img/gh-icon.png" />
+    </a>
 
     <details>
       <summary>
@@ -73,6 +82,9 @@
 
       <pre id="files-list-with-urls"></pre>
     </details>
+    <a target="_blank" href="https://github.com/hatskier/blockstack-pure-js-app-example/blob/master/js/gaia.js#L30">
+      <img class="gh-img" src="img/gh-icon.png" />
+    </a>
 
     <details>
       <summary>
@@ -99,6 +111,10 @@
 
       <pre id="file-content"></pre>
     </details>
+
+    <a target="_blank" href="https://github.com/hatskier/blockstack-pure-js-app-example/blob/master/js/gaia.js#L51">
+      <img class="gh-img" src="img/gh-icon.png" />
+    </a>
 
   </div>
 
