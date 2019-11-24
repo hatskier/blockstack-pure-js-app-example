@@ -1,9 +1,8 @@
 {
   "name": "Blockstack pure JS app",
-  "start_url": "localhost:8080",
   "description": "Simple and decentralized application build on Blockstack with pure JS",
   "icons": [{
-    "src": "https://codenplay.io/img/codenplay-logo.png",
+    "src": "https://purejs.dece.app/img/dece-logo.png",
     "sizes": "192x192",
     "type": "image/png"
   }]
