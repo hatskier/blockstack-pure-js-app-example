@@ -17,14 +17,32 @@
     Sign out
   </button>
 
-
   <p>
-    Add radiks description about radiks where we describe radiks and tell about radiks and so on.
-    Add radiks description about radiks where we describe radiks and tell about radiks and so on.
-    Add radiks description about radiks where we describe radiks and tell about radiks and so on.
-    Add radiks description about radiks where we describe radiks and tell about radiks and so on.
-    Add radiks description about radiks where we describe radiks and tell about radiks and so on.
+    Radix is a client-side framework for building model-driven decentralized <br />
+    applications on top of Blockstack storage and authentication. <br />
+    It aims to solve the following problems:
   </p>
+  <ul>
+    <li>Storing and querying complex data</li>
+    <li>Indexing data to easily query user's publicly saved data</li>
+    <li>Collaboration with other users</li>
+    <li>Real-time updates (in progress)</li>
+  </ul>
+
+  <a target="_blank" href="https://github.com/blockstack/radiks">
+    Link to official radiks repo
+  </a>
+
+  <details>
+    <summary>You can save data to radiks</summary>
+    <button onclick="createNewPerson()" >Add new entity</button>
+  </details>
+
+  <details>
+    <summary>You can query data from radiks</summary>
+    <button onclick="onGetDataButtonClicked()">Query data</button>
+    <pre id="fetched-data"></pre>
+  </details>
 
   <h4>Please contact me if you have an idea how to make this app better</h4>
   <a href="mailto:Suvorovalex1997@gmail.com">Suvorovalex1997@gmail.com</a>
@@ -34,7 +52,8 @@
   </a>
 
   <script src="https://unpkg.com/blockstack@19.4.0-beta.1/dist/blockstack.js" integrity="sha384-UnkhaTA3XqTl/a79lTWO+C85bbXyM8IIUYtSLfrkkNQJcCxocVZv8nHaMzrvS9ZH" crossorigin="anonymous"></script>
+  <script src="js/radiks-browserified.js"></script>
   <script src="js/blockstack-setup.js"></script>
-  <script src="js/signedin.js"></script>
+  <script src="js/radiks.js"></script>
 </body>
 </html>
