@@ -8,7 +8,7 @@ The main purpose is to give simple code exmaples for developers so they can star
 ## Try it
 The app is available at https://purejs.dece.app
 
-## Checkout
+## Check out
 - [Oficial blockstack documentation](http://blockstack.github.io/blockstack.js/index.html)
 - [Blockstack forum](https://forum.blockstack.org/)
 - [Official blockstack website](https://blockstack.org/)
@@ -18,3 +18,6 @@ The app is available at https://purejs.dece.app
 npm i -g http-server
 http-server . --cors
 ```
+
+## Contact me
+Feel free to contact me if there are any problems with the app or if you have an idea how to make it better :) 

@@ -1,5 +1,5 @@
 function signIn() {
-  blockstack.redirectToSignIn();
+  userSession.redirectToSignIn();
 }
 
 function doMainActionWhenUserIsSignedIn() {
@@ -8,10 +8,10 @@ function doMainActionWhenUserIsSignedIn() {
 }
 
 window.addEventListener('load', (event) => {
-  if (blockstack.isUserSignedIn()) {
+  if (userSession.isUserSignedIn()) {
     doMainActionWhenUserIsSignedIn();
-  } else if ((blockstack.isSignInPending())) {
-    blockstack.handlePendingSignIn().then(function() {
+  } else if ((userSession.isSignInPending())) {
+    userSession.handlePendingSignIn().then(function() {
       doMainActionWhenUserIsSignedIn();
     });
   }
