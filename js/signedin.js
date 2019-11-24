@@ -9,7 +9,5 @@ window.addEventListener('load', (event) => {
 
   userData = userSession.loadUserData();
   document.getElementById('user-data').innerHTML =
-    JSON.stringify(userData, '\t', 2); // null and 2 for nice formatting
+    JSON.stringify(userData, '\t', 2);
 });
-
-
