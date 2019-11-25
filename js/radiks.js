@@ -1,7 +1,7 @@
 async function prepareRadix() {
   radiks.configure({
     // TODO I will set up better radiks server on radiks.dece.app and replace with 
-    apiServer: 'http://amadeus.kodek.sh:1260',
+    apiServer: 'https://radiks.dece.app',
     userSession
   });
 
